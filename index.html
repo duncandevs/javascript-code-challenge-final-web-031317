@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>JavaScript Code Challenge - Final</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
     <script type="text/javascript" src='./lib/jquery-3.2.1.js'></script>
   </head>
   <body>
@@ -18,15 +19,20 @@
         <div class="col s4">
           <form id="photo-form">
             <label for="image_url">Image Url</label>
-            <input type='text' name='image_url' />
+            <input type='text' name='image_url' id="image-input"/>
             <label for="caption">Caption</label>
-            <input type='text' name='caption' />
-            <input type='submit' />
+            <input type='text' name='caption' id="caption-input" />
+            <input type='submit' class="btn"/>
           </form>
         </div>
 
         <div class='col s8'>
-          <div id='photo-list'></div>
+          <div id='photo-list'>
+            <div class="post-container">
+              <img src = "https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_960_720.jpg" class="post-image">
+              <div class="post-caption"><span class="post-caption-entry">this is a cat test post</span></div>
+            </div>
+          </div>
         </div>
       </div>
 
